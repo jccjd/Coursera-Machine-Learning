@@ -1,7 +1,7 @@
 ### 普通翻墙教程
 #### 1. **下载浏览器**
 - Chrome(自行百度安装)
-- yandex(推荐地址：https://browser.yandex.com)下面用的是此浏览器
+- yandex(下面用的是此浏览器 地址：https://browser.yandex.com)
 #### 2. 安装蓝灯
 - 打开文件中的蓝灯并安装蓝灯（landtern-installer) 
 
