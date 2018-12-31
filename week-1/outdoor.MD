@@ -1,13 +1,13 @@
 ### 普通翻墙教程
 #### 1. **下载浏览器**
 - Chrome(自行百度安装)
-- yandex(推荐地址：https://browser.yandex.com)
+- yandex(推荐地址：https://browser.yandex.com，下面用的是此浏览器)
 #### 2. 安装蓝灯
 - 打开文件中的蓝灯并安装蓝灯（landtern-installer) 
 
  ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/捕获1.PNG?raw=true)
 
-- 显示连接成功即可使用
+- 显示连接成功即可使用，下面是安装后会自动弹出的网页
 
  ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/捕获3.PNG?raw=true)
 )
@@ -17,7 +17,7 @@
 
 ```
 ```
-- 打开浏览器中的设置 -> 扩展插件
+- 打开浏览器中的 设置->扩展插件
 - 将文件中的( Chrome_setupvpn_3.3.1 )直接拖动到扩展插件中
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/捕获4.PNG?raw=true)
