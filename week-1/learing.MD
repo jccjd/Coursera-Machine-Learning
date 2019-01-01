@@ -10,7 +10,7 @@ Tom Mitchell provides a more modern definition: "A computer program is said to l
 - T = the task of playing checkers.
 （任务）
 
-- P = the probability that the program will win the next game.
+- P = the probability that the program will win the next game.（预测正确的概率）
 
 > In general, any machine learning problem can be assigned to one of two broad classifications:
 Supervised learning and Unsupervised learning.
