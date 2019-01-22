@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 #### Model Representation 
 
 To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:
@@ -11,5 +12,14 @@ To describe the supervised learning problem slightly more formally, our goal is,
 
 #### Cost function （代价函数）
 我们可以使用成本函数来衡量我们的假设函数的准确性。 这需要假设的所有结果与来自x和实际输出y的输入的平均差异（实际上是平均值的更高版本，即使平方差公式）
+
+ ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/costfunction.PNG?raw=true)
+ 
+ 代价函数是线性回归中的一个应用，在线性回归中，要解决的一个问题就是最小化问题，
+ 假设直线方程
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+
+ 
 
 
