@@ -109,4 +109,3 @@ With unsupervised learning there is no feedback based on the prediction results.
  Which of these is a reasonable definition of machine learning?
  
  Answer: Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed.
- 
