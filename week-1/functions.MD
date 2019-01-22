@@ -11,5 +11,6 @@ To describe the supervised learning problem slightly more formally, our goal is,
 
 #### Cost function （代价函数）
 我们可以使用成本函数来衡量我们的假设函数的准确性。 这需要假设的所有结果与来自x和实际输出y的输入的平均差异（实际上是平均值的更高版本，即使平方差公式）
-$$a + b$$
+$$$$
+$${}^*x^*$$
 
