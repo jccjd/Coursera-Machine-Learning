@@ -16,7 +16,9 @@ To describe the supervised learning problem slightly more formally, our goal is,
  ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/costfunction.PNG?raw=true)
  
  代价函数是线性回归中的一个应用，在线性回归中，要解决的一个问题就是最小化问题，
- 假设直线方程
+ 假设直线方程 如何使得函数更加拟合于训练集
+ 那么就需要costFunction来找到最小误差的方程
+ > h0(X) = 1(@0) + x(@1)
 
  
 
