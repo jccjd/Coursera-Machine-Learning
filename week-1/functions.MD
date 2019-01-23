@@ -17,8 +17,6 @@ To describe the supervised learning problem slightly more formally, our goal is,
  
  代价函数是线性回归中的一个应用，在线性回归中，要解决的一个问题就是最小化问题，
  假设直线方程
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
  
 
