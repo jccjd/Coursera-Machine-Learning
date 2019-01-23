@@ -19,6 +19,7 @@ To describe the supervised learning problem slightly more formally, our goal is,
  假设直线方程 如何使得函数更加拟合于训练集
  那么就需要costFunction来找到最小误差的方程
  > h0(X) = 1(@0) + x(@1)
+ ![image](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/R2YF5Lj3EeajLxLfjQiSjg_110c901f58043f995a35b31431935290_Screen-Shot-2016-12-02-at-5.23.31-PM.png?expiry=1548374400000&hmac=zHQNN3AFlUe0GrW9JURRWNtSNT3oKsXU5WdQLLl9oWw)
 #### Gradient Descent(梯度下降)
 
  
