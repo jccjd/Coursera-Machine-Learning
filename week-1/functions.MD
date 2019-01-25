@@ -18,12 +18,12 @@ To describe the supervised learning problem slightly more formally, our goal is,
  假设直线方程 如何使得函数更加拟合于训练集
  那么就需要costFunction来找到最小误差的方程
  > hθ(X) = 1(θ0) + x(θ1)
- ![image](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/R2YF5Lj3EeajLxLfjQiSjg_110c901f58043f995a35b31431935290_Screen-Shot-2016-12-02-at-5.23.31-PM.png?expiry=1548374400000&hmac=zHQNN3AFlUe0GrW9JURRWNtSNT3oKsXU5WdQLLl9oWw)
+ ![image](https://camo.githubusercontent.com/32d1402d812f48fa3a9078f8acec0fa1e41c6396/68747470733a2f2f696d672e68616c66726f73742e636f6d2f426c6f672f41727469636c65496d6167652f36385f305f312e706e67)
 #### Gradient Descent(梯度下降)
 梯度下降的主要思想：
 1. 初始化θ0和θ1，θ0 = 0，θ1 = 0;
 2. 不断的改变θ0和θ1的值 ，不断减少f（θ0，θ1）直到最小值或局部最小
-![image](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bn9SyaDIEeav5QpTGIv-Pg_0d06dca3d225f3de8b5a4a7e92254153_Screenshot-2016-11-01-23.48.26.png?expiry=1548547200000&hmac=xUwzXKr0Pe1VGpXirgOJLjpiI7s2EQ6UwjkimnKvs64)
+![image](https://camo.githubusercontent.com/d39774347bf60dbac8f776d61207031f9e8bc7bd/68747470733a2f2f696d672e68616c66726f73742e636f6d2f426c6f672f41727469636c65496d6167652f36385f315f302e706e67)
  
 
 
