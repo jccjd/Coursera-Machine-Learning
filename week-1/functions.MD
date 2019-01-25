@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 #### Model Representation 
 
 To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:
@@ -24,7 +23,7 @@ To describe the supervised learning problem slightly more formally, our goal is,
 梯度下降的主要思想：
 1. 初始化θ0和θ1，θ0 = 0，θ1 = 0;
 2. 不断的改变θ0和θ1的值 ，不断减少f（θ0，θ1）直到最小值或局部最小
-
+![image](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bn9SyaDIEeav5QpTGIv-Pg_0d06dca3d225f3de8b5a4a7e92254153_Screenshot-2016-11-01-23.48.26.png?expiry=1548547200000&hmac=xUwzXKr0Pe1VGpXirgOJLjpiI7s2EQ6UwjkimnKvs64)
  
 
 
