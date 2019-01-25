@@ -22,7 +22,34 @@ To describe the supervised learning problem slightly more formally, our goal is,
 梯度下降的主要思想：
 1. 初始化θ0和θ1，θ0 = 0，θ1 = 0;
 2. 不断的改变θ0和θ1的值 ，不断减少f（θ0，θ1）直到最小值或局部最小
-![image](https://camo.githubusercontent.com/d39774347bf60dbac8f776d61207031f9e8bc7bd/68747470733a2f2f696d672e68616c66726f73742e636f6d2f426c6f672f41727469636c65496d6167652f36385f315f302e706e67)
+
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/gradient.png?raw=true)
  
+当成本函数位于图中凹坑的最底部时，即当它的值最小时，我们就知道我们已经成功了。红色箭头显示图表中的最小点
 
+这样做的方法是采用成本函数的导数（一个函数的切线）。 切线的斜率是该点的导数，它将为我们提供朝向的方向。 我们在最陡下降的方向上降低成本函数。 每个步骤的大小由参数α确定，该参数称为学习率。
 
+较小的α将导致较小的步长，较大的α将导致较大的步长。
+
+梯度下降算法是：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/functions_gradient.PNG?raw=true)
+
+然后不断更新直到收敛
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/functions_gradient_2.PNG?raw=true)
+
+> 注意θ1 和 θ0 要同时更新
+
+如果 α 被设置的很小，需要很多次循环才能到底最低点。 如果 α 被设置的很大，来来回回可能就会离最低点越来越远，会导致无法收敛，甚至发散。
+当快要到最低点的时候，梯度下降会越来越慢。
+
+#### Gradient Descent For Linear Regression
+
+当实际运用到线性回归中可以导出新的方程：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-1/tu/functions_gradient3.PNG?raw=true)
+> 1. m:训练集大下
+> 2. xi，yi：训练集数据的值
+> 3. θ1 和 θ0 要同时更新
