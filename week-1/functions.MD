@@ -53,3 +53,4 @@ To describe the supervised learning problem slightly more formally, our goal is,
 > 1. m:训练集大下
 > 2. xi，yi：训练集数据的值
 > 3. θ1 和 θ0 要同时更新
+
