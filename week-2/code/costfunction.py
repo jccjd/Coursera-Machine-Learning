@@ -55,7 +55,6 @@ plt.plot(x_data,k*x_data + b,'r')
 plt.show()
 
 
-# In[ ]:
 
 
 
