@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics import classification_report
 from sklearn import preprocessing
 from sklearn import linear_model
-
+scale = False
 data = np.genfromtxt('data1.txt',delimiter=',')
 x_data = data[:,:-1]
 y_data = data[:,-1]
@@ -29,6 +29,15 @@ def plot():
 plot()
 # plt.show()
 
-logistic = linear_model.LogisticRegression()
-logistic.fit(x_data,y_data)
+logistic1 = linear_model.LogisticRegression()
+logistic1.fit(x_data,y_data)
 
+if scale == False:
+    plot()
+    x_test = np.array([[-2.5],[1]])
+    y_test = (-logistic1.intercept_ - x_test*logistic1.coef_[0][0])/logistic1.coef_[0][1]
+    plt.plot(x_test,y_test,'k')
+    plt.show()
+
+predictions = logistic1.predict(x_data)
+print(classification_report(y_data,predictions))
