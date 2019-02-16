@@ -40,7 +40,7 @@ y_data = data[:, -1, np.newaxis]
 print(np.mat(x_data).shape)
 print(np.mat(y_data).shape)
 # 给样本添加偏执项
-X_data = np.concatenate((np.ones((24, 1)), x_data), axis=1)
+X_data = np.concatenate((np.ones((14, 1)), x_data), axis=1)
 print(X_data.shape)
 
 
@@ -83,7 +83,7 @@ def gradAscent(xArr, yArr):
 
 # 训练模型，得到权值和cost值的变化
 ws, costList = gradAscent(X_data, y_data)
-print(ws)
+# print(ws)
 
 if scale == False:
     # 画图决策边界
@@ -92,3 +92,22 @@ if scale == False:
     y_test = (-ws[0] - x_test * ws[1]) / ws[2]
     plt.plot(x_test, y_test, 'k')
     plt.show()
+
+#画图loss 值的变化
+x = np.linspace(0,10000,201)
+plt.plot(x, costList,c = 'r')
+plt.title('Train')
+plt.xlabel("Epochs")
+plt.ylabel("Cost")
+# plt.show()
+
+#预测
+def predict(x_data,ws):
+    if scale == True:
+        x_data = preprocessing.scale(x_data)
+    xMat = np.mat(x_data)
+    ws = np.mat(ws)
+    return [1 if x >= 0.5 else 0 for x in sigmoid(xMat * ws)]
+
+predictions = predict(X_data,ws)
+print(classification_report(y_data,predictions))
