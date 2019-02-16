@@ -71,7 +71,7 @@ def gradAscent(xArr,yArr):
 
     for i in range(epochs + 1) :
         h = sigmoid(xMat * ws)
-
+        #计算误差
         ws_grad = xMat.T * (h - yMat)/m
         ws = ws - lr * ws_grad
 
