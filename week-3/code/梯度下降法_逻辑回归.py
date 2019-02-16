@@ -4,7 +4,7 @@ from sklearn.metrics import classification_report
 from sklearn import preprocessing
 
 # 数据是否需要标准化
-scale = False
+scale = True
 # 载入数据
 data = np.genfromtxt('data1.txt', delimiter=',')
 x_data = data[:, :-1]
@@ -83,7 +83,7 @@ def gradAscent(xArr, yArr):
 
 # 训练模型，得到权值和cost值的变化
 ws, costList = gradAscent(X_data, y_data)
-# print(ws)
+print(ws)
 
 if scale == False:
     # 画图决策边界
@@ -99,7 +99,7 @@ plt.plot(x, costList,c = 'r')
 plt.title('Train')
 plt.xlabel("Epochs")
 plt.ylabel("Cost")
-# plt.show()
+plt.show()
 
 #预测
 def predict(x_data,ws):
