@@ -65,4 +65,22 @@ def gradAscent(xArr,yArr):
 
 ws,cosList = gradAscent(x_poly,y_data)
 # print(ws)
+#计算边界
+x_min, x_max = x_data[:,0].min() - 1, x_data[:,0].max() + 1
+y_min, y_max = x_data[:,1].min() - 1, x_data[:,1].max() + 1
+#生成网格矩阵
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.02),
+                     np.arange(y_min,y_max,0.02))
 
+#ravel 与flatten类似，多维数据转一维。flatten不会改变原始
+z = sigmoid(poly_reg.fit_transform(np.c_[xx.ravel(),yy.ravel()]).dot(np.array(ws)))
+for i in range(len(z)):
+    if z[i] > 0.5:
+        z[i] = 1
+    else:
+        z[i] = 0
+
+z = z.reshape(xx.shape)
+cs =plt.contourf(xx,yy,z)
+plot()
+plt.show()
