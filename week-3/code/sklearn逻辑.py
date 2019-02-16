@@ -23,8 +23,12 @@ def plot():
             x1.append(x_data[i, 0])
             y1.append(x_data[i, 1])
 
-    scatter0 = plt.scatter(x0,y0,c = 'b', marker='0')
+    scatter0 = plt.scatter(x0,y0,c = 'b', marker='o')
     scatter1 = plt.scatter(x1,y1,c = 'r', marker='x')
     plt.legend(handles=[scatter0,scatter1],labels=['label0','label1'],loc = 'best')
 plot()
-plt.show()
+# plt.show()
+
+logistic = linear_model.LogisticRegression()
+logistic.fit(x_data,y_data)
+
