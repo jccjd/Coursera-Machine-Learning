@@ -83,4 +83,12 @@ for i in range(len(z)):
 z = z.reshape(xx.shape)
 cs =plt.contourf(xx,yy,z)
 plot()
-plt.show()
+# plt.show()
+
+#预测
+def predict(x_data,ws):
+    xMat = np.mat(x_data)
+    ws = np.mat(ws)
+    return [1 if x >= 0.5 else 0 for x in  sigmoid(xMat * ws)]
+predictions = predict(x_poly,ws)
+print(classification_report(y_data,predictions))
