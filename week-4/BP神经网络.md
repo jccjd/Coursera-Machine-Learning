@@ -6,5 +6,18 @@
     逼近，回归，压缩等领域。在实际引用中，大约80%的神经网络模型都采用
     BP网络或BP网络的变种
 
-#### 网络结构
+
+
+#### BP算法
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络3.PNG?raw=true)
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络2.PNG?raw=true)
+
+举例在如下的网络结构中利用上面的公式进行求解：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络4.PNG?raw=true)
+
+
+
 
