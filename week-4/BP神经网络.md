@@ -18,10 +18,15 @@
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络4.PNG?raw=true)
 
+#### 激活函数
+常用的激活函数有下面几个 和sigmod函数
 
-#### Tanh函数和Softsign函数
+##### Tanh函数和Softsign函数
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络5.PNG?raw=true)
 
+##### ReLU函数
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络6.PNG?raw=true)
 
 
