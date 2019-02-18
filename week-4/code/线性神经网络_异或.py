@@ -1,17 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 #输入数据
-X = np.array([[1,3,3],
-              [1,4,3],
-              [1,1,1],
-              [1,0,2]])
+X = np.array([[1,0,0,0,0,0],
+              [1,0,1,0,0,1],
+              [1,1,0,1,0,0],
+              [1,1,1,1,1,1]])
 #标签
-Y = np.array([[1],
-              [1],
-              [-1],
-              [-1]])
+Y = np.array([1,1,-1])
 #权值初始化，3行1列，取值范围-1 到 1
-W = (np.random.random([3,1]) - 0.5) * 2
+W = (np.random.random(6) - 0.5) * 2
 
 print(W)
 #学习率设置
@@ -26,10 +23,8 @@ def update():
 
 for i in range(100):
     update()
-    print(W)
-    print(i)
     O = np.sign(np.dot(X,W))
-    if(O == Y).all():
+    if(O == Y.T).all():
         print("Finished")
         print('epoch',i)
         break

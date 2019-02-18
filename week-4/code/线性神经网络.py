@@ -26,13 +26,6 @@ def update():
 
 for i in range(100):
     update()
-    print(W)
-    print(i)
-    O = np.sign(np.dot(X,W))
-    if(O == Y).all():
-        print("Finished")
-        print('epoch',i)
-        break
 #正样本
 x1 = [3,4]
 y1 = [3,4]
