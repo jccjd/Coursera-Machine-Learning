@@ -39,7 +39,7 @@ y2 = [0, 1]
 
 
 def calculate(x, root):
-    a = W[3]
+    a = W[5]
     b = W[2] + x * W[4]
     c = W[0] + x * W[1] + x * x * W[3]
     if root == 1:
