@@ -19,5 +19,9 @@
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络4.PNG?raw=true)
 
 
+#### Tanh函数和Softsign函数
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络5.PNG?raw=true)
+
 
 
