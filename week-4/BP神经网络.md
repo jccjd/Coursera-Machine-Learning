@@ -1,4 +1,4 @@
-#### BP(Back Propagation)神经网络
+### BP(Back Propagation)神经网络
     1986年，由McClelland和Rumelhart 为首的科学家小组
     提出，解决了多层神经网络的学习问题，极大促进了神经网络的发展
     
@@ -8,7 +8,7 @@
 
 
 
-#### BP算法
+### BP算法
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络3.PNG?raw=true)
 
@@ -18,14 +18,14 @@
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络4.PNG?raw=true)
 
-#### 激活函数
+### 激活函数
 常用的激活函数有下面几个 和sigmoid函数
 
-##### Tanh函数和Softsign函数
+### Tanh函数和Softsign函数
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络5.PNG?raw=true)
 
-##### ReLU函数
+### ReLU函数
 此函数较常用
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络6.PNG?raw=true)
 
