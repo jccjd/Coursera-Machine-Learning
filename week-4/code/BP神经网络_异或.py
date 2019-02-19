@@ -1,11 +1,11 @@
 import numpy as np
 #输入数据
 X = np.array([[1,0,0],
-              [1,0,1]
-              [1,1,0]
+              [1,0,1],
+              [1,1,0],
               [1,1,1]])
 #标签
-Y = np.array([-1,1,1,-1])
+Y = np.array([0,1,1,0])
 #权值初始化，取值范围-1到1
 V = np.random.random((3,4))*2 -1
 W = np.random.random((4,1))*2 -1
@@ -16,6 +16,7 @@ print(W)
 lr = 0.11
 def sigmoid(x):
     return 1/(1 + np.exp(-x))
+#sigmoid的导数
 def dsigmoid(x):
     return x(1-x)
 def update():
