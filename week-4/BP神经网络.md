@@ -29,4 +29,6 @@
 此函数较常用
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-4/image/BP神经网络6.PNG?raw=true)
 
+机器学习演示：https://playground.tensorflow.org/
+
 
