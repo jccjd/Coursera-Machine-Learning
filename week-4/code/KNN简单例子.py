@@ -14,7 +14,7 @@ x = np.array([18])
 y = np.array([90])
 scatter3 = plt.scatter(x,y,c = 'k')
 plt.legend(handles=[scatter1,scatter2,scatter3],labels=['labelA','labelB','x'],loc='best')
-plt.show()
+# plt.show()
 
 #已知分类的数据
 x_data = np.array([[3,104],
@@ -58,5 +58,7 @@ print(classCount)
 sortedClasscount = sorted(classCount.items(),key=operator.itemgetter(1),reverse = True)
 print(sortedClasscount)
 
-
+#获取数量最多的标签
+knncless = sortedClasscount[0][0]
+print(knncless)
 
