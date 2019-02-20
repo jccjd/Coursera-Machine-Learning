@@ -15,3 +15,13 @@ y = np.array([90])
 scatter3 = plt.scatter(x,y,c = 'k')
 plt.legend(handles=[scatter1,scatter2,scatter3],labels=['labelA','labelB','x'],loc='best')
 plt.show()
+
+#已知分类的数据
+x_data = np.array([[3,104],
+                   [2,100],
+                   [101,10],
+                   [99,5],
+                   [8,2]])
+y_data = np.array(['A','A','B','B','B'])
+x_test = np.array([18,90])
+#
