@@ -22,7 +22,7 @@ x_data = np.array([[3,104],
                    [101,10],
                    [99,5],
                    [8,2]])
-y_data = np.array(['A','A','B','B','B'])
+y_data = np.array(['A','A','A','B','B','B'])
 x_test = np.array([18,90])
 #计算样本数量
 x_data_size = x_data.shape[0]
