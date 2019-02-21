@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 #载入数据
 data = np.genfromtxt('data1.txt',delimiter=' ')
 plt.scatter(data[:,0],data[:,1])
-plt.show()
+# plt.show()
 print(data.shape)
 
 #训练模型
@@ -67,7 +67,7 @@ def kmeans(data,k):
             #第j个簇所有的样本点
             pointsInCluster = data[cluster_index]
             #计算质心
-            centroids[j,1] = np.mean(pointsInCluster,axis=0)
+            centroids[j,:] = np.mean(pointsInCluster,axis=0)
             # showCluster(data,k,centroids,clusterData)
     return centroids,clusterData
 
@@ -106,3 +106,5 @@ else:
     print("cluster complete")
 #显示结果
 showCluster(data,k,centroids,clusterData)
+
+
