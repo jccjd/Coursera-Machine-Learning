@@ -105,6 +105,46 @@ if np.isnan(centroids).any():
 else:
     print("cluster complete")
 #显示结果
+# showCluster(data,k,centroids,clusterData)
+
+
+
+#做预测
+x_test = [0,1]
+np.tile(x_test,(k,1))
+
+#误差
+np.tile(x_test,(k,1)) - centroids
+
+print(np.tile(x_test,(k,1)) - centroids)
+
+#误差平方
+(np.tile(x_test,(k,1)) - centroids) ** 2
+
+print((np.tile(x_test,(k,1)) - centroids) ** 2)
+
+#误差平方和
+((np.tile(x_test,(k,1)) - centroids) ** 2).sum(axis = 1)
+#最小值所在的索引号
+np.argmin(((np.tile(x_test,(k,1)) - centroids) ** 2).sum(axis = 1))
+def predict(datas):
+    return np.array([np.argmin(((np.tile(data,(k,1)) - centroids) ** 2).sum(axis=1))for data in datas])
+
+
+#画出簇的作用域
+x_min,x_max = data[:,0].min() - 1,data[:,0].max() + 1
+y_min,y_max = data[:,1].min() - 1,data[:,1].max() + 1
+
+
+#生成网格矩阵
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.02),
+                     np.arange(y_min,y_max,0.02))
+
+z = predict(np.c_[xx.ravel(),yy.ravel()])
+z = z.reshape(xx.shape)
+#等高线图
+cs = plt.contourf(xx,yy,z)
+#显示结果
 showCluster(data,k,centroids,clusterData)
 
 
