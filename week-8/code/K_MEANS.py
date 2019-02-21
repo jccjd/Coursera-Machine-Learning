@@ -17,7 +17,7 @@ def euclDistance(vector1,vector2):
 def initCentroids(data,k):
     numSamples,dim = data.shape
     #k个质心，列数跟样本的列数一样
-    centroids = np.zeros(k,dim)
+    centroids = np.zeros((k,dim))
     #随机选出K个质心
     for i in range(k):
         #随机选取一个样本的索引
@@ -31,7 +31,7 @@ def kmeans(data,k):
     #计算样本个数
     numSamples = data.shape[0]
     #样本的属性，第一列保存该样本属于哪个簇，第二个列保存该样本跟他所属簇的误差
-    clusterData = np.array(np.zeros(numSamples,2))
+    clusterData = np.array(np.zeros((numSamples,2)))
     #决定质心是否要改变的变量
     clusterChanged = True
     #初始化质心
@@ -56,9 +56,9 @@ def kmeans(data,k):
             #如果样本的所属的簇发生了变化
             if clusterData[i,0] != minIndex:
                 #质心要重新计算
-                clusterData = True
+                clusterChanged = True
                 #更新样本的簇
-                clusterData[i,0] = minIndex
+                clusterData[i, 0] = minIndex
 
         #更新质心
         for j in range(k):
