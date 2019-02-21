@@ -105,7 +105,7 @@ if np.isnan(centroids).any():
 else:
     print("cluster complete")
 #显示结果
-# showCluster(data,k,centroids,clusterData)
+showCluster(data,k,centroids,clusterData)
 
 
 
@@ -145,6 +145,6 @@ z = z.reshape(xx.shape)
 #等高线图
 cs = plt.contourf(xx,yy,z)
 #显示结果
-showCluster(data,k,centroids,clusterData)
+# showCluster(data,k,centroids,clusterData)
 
 
