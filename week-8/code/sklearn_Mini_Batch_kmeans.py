@@ -14,6 +14,15 @@ centers = model.cluster_centers_
 print(centers)
 #预测结果
 result = model.predict(data)
-print(result)
 
 
+#画图
+mark = ['or','ob','og','oy']
+for i,d in enumerate(data):
+    plt.plot(d[0],d[1],mark[result[i]])
+
+#画出各个分类的中心
+mark = ['*y','*g','*b','*r']
+for i, centers in enumerate(centers):
+    plt.plot(centers[0],centers[1],mark[i],markersize = 20)
+plt.show()
