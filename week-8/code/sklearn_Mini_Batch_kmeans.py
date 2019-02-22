@@ -8,3 +8,7 @@ data = np.genfromtxt('data1.txt', delimiter=' ')
 k = 4
 # 训练模型
 model = MiniBatchKMeans(n_clusters=k)
+model.fit(data)
+#分类中心点坐标
+centers = model.cluster_centers_
+print(centers)
