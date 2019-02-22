@@ -12,3 +12,8 @@ model.fit(data)
 #分类中心点坐标
 centers = model.cluster_centers_
 print(centers)
+#预测结果
+result = model.predict(data)
+print(result)
+
+
