@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 
 #载入数据
 data = np.genfromtxt('data1.txt',delimiter=' ')
-plt.scatter(data[:,0],data[:,1])
-# plt.show()
-print(data.shape)
 
 #训练模型
 
@@ -71,54 +68,59 @@ def kmeans(data,k):
             # showCluster(data,k,centroids,clusterData)
     return centroids,clusterData
 
-#显示结果
-def showCluster(data,k,centroids,clusterData):
-    numSamples,dim = data.shape
-    if dim != 2:
-        print("dimension of you data is not 2")
-        return 1
-    #用不同颜色形状来表示各个类别
-    mark = ['or','ob','og','ok','`r','+r','sr','dr','<r','pr']
-    if k > len(mark):
-        print('you k is too large')
-        return 1
-    #画样本点
-    for i in range(numSamples):
-        markIndex = int(clusterData[i,0])
-        plt.plot(data[i,0],data[i,1],mark[markIndex])
-    #用不同颜色形状来表示各个类别
-    mark = ['*k','*g','*b','*r','^b','+b','sb','db','<b','pr']
-    #画质心
-    for  i in range(k):
-        plt.plot(centroids[i,0],centroids[i,1],mark[i],markersize = 20)
-
-    plt.show()
+# #显示结果
+# def showCluster(data,k,centroids,clusterData):
+#     numSamples,dim = data.shape
+#     if dim != 2:
+#         print("dimension of you data is not 2")
+#         return 1
+#     #用不同颜色形状来表示各个类别
+#     mark = ['or','ob','og','ok','`r','+r','sr','dr','<r','pr']
+#     if k > len(mark):
+#         print('you k is too large')
+#         return 1
+#     #画样本点
+#     for i in range(numSamples):
+#         markIndex = int(clusterData[i,0])
+#         plt.plot(data[i,0],data[i,1],mark[markIndex])
+#     #用不同颜色形状来表示各个类别
+#     mark = ['*k','*g','*b','*r','^b','+b','sb','db','<b','pr']
+#     #画质心
+#     for  i in range(k):
+#         plt.plot(centroids[i,0],centroids[i,1],mark[i],markersize = 20)
+#
+#     # plt.show()
 
 
 #设置k值
 ##优化部分
-k = 4
-min_loss = 10000
-min_loss_centroids = np.array([])
-min_loss_clusterData = np.array([])
+list_loss = []
+for k in range(2,10):
+    min_loss = 10000
+    min_loss_centroids = np.array([])
+    min_loss_clusterData = np.array([])
 
-for i in range(50):
+    for i in range(50):
 
-    #centroids 簇的中心
-    # cluster data 样本的属性，第一列保存该样本属于哪个簇，第二列保存该样本跟它所属簇的误差
-    centroids,clusterData = kmeans(data,k)
-    loss = sum(clusterData[:,1])/data.shape[0]
-    if loss < min_loss:
-        min_loss = loss
-        min_loss_centroids =centroids
-        min_loss_clusterData =clusterData
-
-print("cluster complete")
-centroids = min_loss_centroids
-clusterData = min_loss_clusterData
+        #centroids 簇的中心
+        # cluster data 样本的属性，第一列保存该样本属于哪个簇，第二列保存该样本跟它所属簇的误差
+        centroids,clusterData = kmeans(data,k)
+        loss = sum(clusterData[:,1])/data.shape[0]
+        if loss < min_loss:
+            min_loss = loss
+            min_loss_centroids =centroids
+            min_loss_clusterData =clusterData
+    list_loss.append(min_loss)
+# print("cluster complete")
+# centroids = min_loss_centroids
+# clusterData = min_loss_clusterData
 #显示结果
-showCluster(data,k,centroids,clusterData)
+# showCluster(data,k,centroids,clusterData)
 
+plt.plot(range(2,10),list_loss)
+plt.xlabel('k')
+plt.ylabel('loss')
+plt.show()
 
 
 #做预测
