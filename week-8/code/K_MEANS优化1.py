@@ -96,14 +96,26 @@ def showCluster(data,k,centroids,clusterData):
 
 
 #设置k值
+##优化部分
 k = 4
-#centroids 簇的中心
-# cluster data 样本的属性，第一列保存该样本属于哪个簇，第二列保存该样本跟它所属簇的误差
-centroids,clusterData = kmeans(data,k)
-if np.isnan(centroids).any():
-    print("Error")
-else:
-    print("cluster complete")
+min_loss = 10000
+min_loss_centroids = np.array([])
+min_loss_clusterData = np.array([])
+
+for i in range(50):
+
+    #centroids 簇的中心
+    # cluster data 样本的属性，第一列保存该样本属于哪个簇，第二列保存该样本跟它所属簇的误差
+    centroids,clusterData = kmeans(data,k)
+    loss = sum(clusterData[:,1])/data.shape[0]
+    if loss < min_loss:
+        min_loss = loss
+        min_loss_centroids =centroids
+        min_loss_clusterData =clusterData
+
+print("cluster complete")
+centroids = min_loss_centroids
+clusterData = min_loss_clusterData
 #显示结果
 showCluster(data,k,centroids,clusterData)
 
