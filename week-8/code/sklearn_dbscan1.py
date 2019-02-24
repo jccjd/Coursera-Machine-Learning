@@ -8,3 +8,5 @@ model.fit(data)
 
 result = model.fit_predict(data)
 print(result)
+
+#花点
