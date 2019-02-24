@@ -12,24 +12,15 @@ x =np.concatenate((x1,x2))
 # plt.show()
 
 #KMeans来拟合数据(效果显然并不好)
-y_pred = KMeans(n_clusters=3).fit_predict(x)
-plt.scatter(x[:,0],x[:,1],c = y_pred)
+# y_pred = KMeans(n_clusters=3).fit_predict(x)
+# plt.scatter(x[:,0],x[:,1],c = y_pred)
+# plt.show()
+
+
+
+#DBSCAN来拟合模型
+model = DBSCAN(eps=0.2,min_samples=50).fit_predict(x)
+plt.scatter(x[:,0],x[:,1],c = model)
 plt.show()
 
 
-
-
-
-
-#训练模型
-model = DBSCAN(eps=1.5,min_samples=4)
-model.fit(data)
-
-result = model.fit_predict(data)
-# print(result)
-
-#画点
-mark = ['or','ob','og','oy','ok']
-for i,d in enumerate(data):
-    plt.plot(d[0],d[1],mark[result[i]])
-plt.show()
