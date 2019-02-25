@@ -14,3 +14,27 @@ svm寻找区分两类的超平面（hyper plane)使边际（margin）最大
 
 ### 向量内积
 
+x = {x1,x2,x3....xn}
+
+y = {y1,y2,y3....yn}
+
+向量内积：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/向量内积1.PNG?raw=true)
+
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/向量内积2.PNG?raw=true)
+
+范数：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/向量内积3.PNG?raw=true)
+
+当||x|| =/ 0 ，||y||=/0 时，可以求余弦相似度：
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/向量内积4.PNG?raw=true)
+
+
+
+
+
+
