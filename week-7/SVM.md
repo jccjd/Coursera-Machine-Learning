@@ -39,6 +39,11 @@ y = {y1,y2,y3....yn}
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/向量内积4.PNG?raw=true)
 
 
+### SVM推导
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/SVM3.PNG?raw=true)
+
+
 
 
 

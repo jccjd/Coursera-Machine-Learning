@@ -10,3 +10,6 @@ print(model.support_)
 #有几个支持向量
 print(model.n_support_)
 model.predict([[4,3]])
+print(model.coef_)
+
+print(model.intercept_)
