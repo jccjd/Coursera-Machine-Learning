@@ -43,8 +43,21 @@ y = {y1,y2,y3....yn}
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/线性不可分1.PNG?raw=true)
 
-如果出现这种情况发生线性不可分需要进行改进
-> 松弛变量与惩罚函数
+如果出现这种情况发生线性不可分需要进行改进，松弛变量与惩罚函数
+    
+    yi(wi*xi + b) >1 -εi,εi>0
+    约束条件没有体现错误分类的点要尽量究竟分类边界
+    
+    min(||w||^2 / 2) + C * sum(εi)
+    使得分错的点越少越好，距离分类边界越近越好
+线性不可分情况下的对偶问题
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/线性不可分1.PNG?raw=true)
+
+> s.t.,C>аi>0, i =1,
+
+
+
 
 
 
