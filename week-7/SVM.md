@@ -43,7 +43,13 @@ y = {y1,y2,y3....yn}
 
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/SVM3.PNG?raw=true)
 
-
+    w * x + b > 1       则分类 y = 1     
+    w * x + b = -1      则分类y = -1
+    
+    y(w * x + b ) > 1
+    
+    求 d = 2/|w| 最大值
+    也就是求min(|w|^2 / 2)
 
 
 
