@@ -68,6 +68,13 @@ https://v.qq.com/x/page/k05170ntgzc.html
 
 ### 核函数
 
+我们可以构建核函数使得运算结果等同于非线性映射，同时运算量要远远小于非线性映射
+
+    K(x1,ji) = φ(xi)φ(xj)
+    
+h次多项式核函数：K(xi,xj) = (xi,xj+1)^h
+高斯径向基数核函数：K(xi,xj) = e^-(||xi,xj||)^2/2σ^2
+S型核函数：K(xi,xj) = tanh(k Xi*Xj -σ)
 
 
 
