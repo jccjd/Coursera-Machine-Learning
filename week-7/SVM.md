@@ -55,6 +55,19 @@ y = {y1,y2,y3....yn}
 ![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/线性不可分1.PNG?raw=true)
 
 > s.t.,C>аi>0, i =1,
+### SVM低维映射
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/SVM4.PNG?raw=true)
+
+非线性情况把低维空间的非线性问题映射到高维空间，变成求解线性问题
+
+![image](https://github.com/jccjd/Coursera-Machine-Learning/blob/master/week-7/image/SVM5.PNG?raw=true)
+
+演示：
+https://v.qq.com/x/page/k05170ntgzc.html
+
+
+
 
 
 
