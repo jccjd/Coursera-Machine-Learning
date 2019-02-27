@@ -66,6 +66,8 @@ y = {y1,y2,y3....yn}
 演示：
 https://v.qq.com/x/page/k05170ntgzc.html
 
+### 核函数
+
 
 
 
