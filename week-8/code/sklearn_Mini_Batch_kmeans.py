@@ -4,6 +4,11 @@ import matplotlib.pyplot as plt
 
 # 载入数据
 data = np.genfromtxt('data1.txt', delimiter=' ')
+x_data = data[:,0]
+y_data = data[:,1]
+plt.scatter(x_data,y_data)
+plt.show()
+
 # 设置k值
 k = 4
 # 训练模型
