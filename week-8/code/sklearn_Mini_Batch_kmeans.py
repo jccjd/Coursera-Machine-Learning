@@ -45,5 +45,4 @@ z = z.reshape(xx.shape)
 #等高线图
 cs = plt.contourf(xx,yy,z)
 #显示结果
-
-plt.show()
+# plt.show()
