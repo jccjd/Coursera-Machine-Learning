@@ -30,8 +30,8 @@ def plot():
     plt.legend(handles=[scatter0, scatter1], labels=['lable0', 'lable1'], loc='best')
 
 
-# plot()
-# plt.show()
+plot()
+plt.show()
 
 # 数据处理，添加偏执值
 x_data = data[:, :-1]

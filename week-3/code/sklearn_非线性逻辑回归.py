@@ -8,7 +8,7 @@ from sklearn.preprocessing import PolynomialFeatures
 #可以生成两类或多类数据
 x_data, y_data = make_gaussian_quantiles(n_samples=500,n_features=2,n_classes=2)
 plt.scatter(x_data[:,0],x_data[:,1],c = y_data)
-# plt.show()
+plt.show()
 logistic = linear_model.LogisticRegression()
 logistic.fit(x_data,y_data)
 
