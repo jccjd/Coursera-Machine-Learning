@@ -31,7 +31,7 @@ def plot():
 
 
 plot()
-plt.show()
+# plt.show()
 
 # 数据处理，添加偏执值
 x_data = data[:, :-1]
